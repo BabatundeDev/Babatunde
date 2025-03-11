@@ -51,6 +51,12 @@ const scrollToTopBtn = document.getElementById("scrollToTop");
             origin: "bottom",
             delay: 600, 
         });
+
+        ScrollReveal().reveal("#profile", { 
+            ...scrollRevealOption, 
+            origin: "top",
+            interval: 300, 
+        });
     
         ScrollReveal().reveal("#contact", { 
             ...scrollRevealOption, 
