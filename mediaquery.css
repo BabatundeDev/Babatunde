@@ -40,6 +40,9 @@
     .about-containers{
         gap: 1rem;
     }
+    .details-container{
+        padding: 1rem;
+    }
 }
 
 @media (max-width: 768px) {

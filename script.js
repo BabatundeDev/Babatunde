@@ -36,13 +36,13 @@ const scrollToTopBtn = document.getElementById("scrollToTop");
     
         ScrollReveal().reveal("#about", { 
             ...scrollRevealOption, 
-            origin: "left", 
-            delay: 300,
+            origin: "bottom", 
+            delay: 500,
         });
     
         ScrollReveal().reveal("#experience", { 
             ...scrollRevealOption, 
-            origin: "right",
+            origin: "top",
             delay: 300, 
         });
     
