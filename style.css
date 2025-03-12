@@ -32,7 +32,6 @@
   background-position: center;
   background-attachment: fixed;
   color: white;
-  height: 100vh;
 }
 
 body {
@@ -206,7 +205,6 @@ section {
 }
 
 .section-pic-container {
-  margin-top: 2rem;
   display: flex;
   height: 250px;
   width: 250px;
