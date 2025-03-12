@@ -32,19 +32,25 @@ document.addEventListener("DOMContentLoaded", () => {
     opacity: 0,
   };
 
-  ScrollReveal().reveal("#about", {
+  ScrollReveal().reveal(".info", {
     ...scrollRevealOption,
     origin: "bottom",
     delay: 500,
   });
 
-  ScrollReveal().reveal("#experience", {
+  ScrollReveal().reveal(".about-details-container", {
+    ...scrollRevealOption,
+    origin: "bottom",
+    delay: 500,
+  });
+
+  ScrollReveal().reveal(".card", {
     ...scrollRevealOption,
     origin: "top",
     delay: 300,
   });
 
-  ScrollReveal().reveal("#projects", {
+  ScrollReveal().reveal(".project-card", {
     ...scrollRevealOption,
     origin: "bottom",
     delay: 600,
