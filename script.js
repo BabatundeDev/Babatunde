@@ -8,8 +8,8 @@ function togglemenu() {
 const scrollToTopBtn = document.getElementById("scrollToTop");
 
 window.addEventListener("scroll", function () {
-  // Check if user is near the bottom of the page
-  if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 10) {
+  // Show button when user scrolls down 100px
+  if (window.scrollY > 100) {
     scrollToTopBtn.style.display = "block";
   } else {
     scrollToTopBtn.style.display = "none";
