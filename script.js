@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", () => {
   ScrollReveal().reveal(".project-card", {
     ...scrollRevealOption,
     origin: "bottom",
-    delay: 600,
+    delay: 500,
   });
 
   ScrollReveal().reveal("#contact", {
