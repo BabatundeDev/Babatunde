@@ -1,9 +1,26 @@
-function togglemenu() {
+document.addEventListener("DOMContentLoaded", function () {
   const menu = document.querySelector(".menu-links");
   const icon = document.querySelector(".hamburger-icon");
-  menu.classList.toggle("open");
-  icon.classList.toggle("open");
-}
+  const overlay = document.createElement("div"); // Create an overlay div
+  overlay.classList.add("menu-overlay");
+  document.body.appendChild(overlay); // Add it to the body
+
+  function togglemenu() {
+    menu.classList.toggle("open");
+    icon.classList.toggle("open");
+    overlay.classList.toggle("active");
+  }
+
+  // Open and close menu on hamburger click
+  icon.addEventListener("click", togglemenu);
+
+  // Close menu when clicking a menu link or the overlay
+  document.querySelectorAll(".menu-links a").forEach(link => {
+    link.addEventListener("click", togglemenu);
+  });
+
+  overlay.addEventListener("click", togglemenu); // Click outside to close
+});
 
 const scrollToTopBtn = document.getElementById("scrollToTop");
 
@@ -44,7 +61,7 @@ document.addEventListener("DOMContentLoaded", () => {
     ...scrollRevealOptions,
     origin: "left",
     delay: 400,
-    interval: 200, // Staggered effect for multiple elements
+    interval: 200, 
   });
 
   ScrollReveal().reveal(".card", {
