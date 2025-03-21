@@ -34,140 +34,64 @@
   color: white;
 }
 
-body {
-  overflow-x: hidden;
-  font-family: "Poppins", serif;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-a,
-.btn {
-  transition: all 300ms ease;
-}
-
-nav,
-.nav-links {
+#navbar {
   display: flex;
-}
-
-nav {
   justify-content: space-around;
   align-items: center;
-  height: 10vh;
-}
-
-.nav-links {
-  margin-top: 1.5rem;
-  gap: 2rem;
-  list-style: none;
-  font-size: 1.5rem;
-}
-
-li a {
+  padding: 10px;
+  width: 100%;
+  background: transparent;
   color: white;
-  text-decoration: none;
-  text-decoration-color: white;
-}
-
-li a:hover {
-  color: #fff;
-  text-decoration: underline;
-  text-underline-offset: 1rem;
-  text-decoration-color: white;
-}
-
-.fa-brands {
-  color: white;
+  top: 0;
+  left: 0;
+  z-index: 1000;
 }
 
 .logo {
-  font-size: 2rem;
-  margin: 0;
-  padding: 0;
+  font-size: 1.8rem;
 }
 
-.logo:hover {
-  cursor: default;
-}
-
-#hamburger-nav {
-  display: none;
-}
-
-.hamburger-menu {
-  position: relative;
-  display: inline-block;
-}
-
-.hamburger-icon {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 24px;
-  width: 20px;
-  cursor: pointer;
-}
-
-.hamburger-icon span {
-  width: 100%;
-  height: 3px;
-  background-color: white;
-  transition: all 0.3s ease-in-out;
-}
-
-.menu-links {
-  position: absolute;
-  top: 100%;
-  height: 100vh;
-  right: 0%;
-  width: fit-content;
-  overflow: hidden;
-  transition: all 0.3s ease-in-out;
-}
-
-.menu-links a {
-  display: block;
-  padding: 10px;
+.nav-links {
+  margin-top: 15px;
+  align-items: center;
   text-align: center;
-  font-size: 1.5rem;
-  color: white;
-  text-decoration: none;
-  transition: all 0.3s ease-in-out;
-}
-
-.menu-links li {
+  display: flex;
   list-style: none;
 }
 
-.menu-links.open {
-  height: 100vh;
+.nav-links li {
+  margin: 0 15px;
 }
 
-.hamburger-icon.open span:first-child {
-  transform: rotate(45deg) translate(10px, 5px);
+.nav-links a {
+  align-items: center;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  position: relative;
 }
 
-.hamburger-icon.open span:nth-child(2) {
-  opacity: 0;
+.nav-links a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: white;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transition: width 0.4s ease-in-out;
 }
 
-.hamburger-icon.open span:last-child {
-  transform: rotate(-45deg) translate(10px, -5px);
+.nav-links a:hover::after {
+  width: 100%;
 }
 
-.hamburger-icon span:first-child {
-  transform: none;
-}
-
-.hamburger-icon span:first-child {
-  opacity: 1;
-}
-
-.hamburger-icon span:first-child {
-  transform: none;
+.hamburger {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
 }
 
 .profile-icon a {
@@ -241,6 +165,10 @@ section {
   justify-content: center;
   margin-top: 1rem;
   gap: 1.5rem;
+}
+
+.fa-brands {
+  color: white;
 }
 
 .container {
@@ -441,4 +369,3 @@ button {
   font-weight: bold;
   cursor: pointer;
 }
-

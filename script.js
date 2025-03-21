@@ -1,29 +1,34 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const menu = document.querySelector(".menu-links");
-  const icon = document.querySelector(".hamburger-icon");
-  const overlay = document.createElement("div"); // Create an overlay div
-  overlay.classList.add("menu-overlay");
-  document.body.appendChild(overlay); // Add it to the body
+function toggleMenu() {
+  let menu = document.querySelector(".nav-links");
+  let icon = document.querySelector(".hamburger i");
 
-  function togglemenu() {
-    menu.classList.toggle("open");
-    icon.classList.toggle("open");
-    overlay.classList.toggle("active");
+  if (menu.classList.contains("show")) {
+    // Close menu first, then change icon
+    menu.classList.remove("show");
+    setTimeout(() => {
+      icon.classList.remove("fa-times");
+      icon.classList.add("fa-bars");
+    }, 400); // Match CSS transition time
+  } else {
+    // Change icon first, then open menu
+    icon.classList.remove("fa-bars");
+    icon.classList.add("fa-times");
+    menu.classList.add("show");
   }
+}
+// Close menu when clicking a link
+function closeMenu() {
+  let menu = document.querySelector(".nav-links");
+  let icon = document.querySelector(".hamburger i");
 
-  // Open and close menu on hamburger click
-  icon.addEventListener("click", togglemenu);
-
-  // Close menu when clicking a menu link or the overlay
-  document.querySelectorAll(".menu-links a").forEach(link => {
-    link.addEventListener("click", togglemenu);
-  });
-
-  overlay.addEventListener("click", togglemenu); // Click outside to close
-});
+  menu.classList.remove("show");
+  setTimeout(() => {
+    icon.classList.remove("fa-times");
+    icon.classList.add("fa-bars");
+  }, 400); // Delay to match the slide-out effect
+}
 
 const scrollToTopBtn = document.getElementById("scrollToTop");
-
 window.addEventListener("scroll", function () {
   // Show button when user scrolls down 100px
   if (window.scrollY > 100) {
@@ -61,7 +66,7 @@ document.addEventListener("DOMContentLoaded", () => {
     ...scrollRevealOptions,
     origin: "left",
     delay: 400,
-    interval: 200, 
+    interval: 200,
   });
 
   ScrollReveal().reveal(".card", {
@@ -93,6 +98,3 @@ document.addEventListener("DOMContentLoaded", () => {
     scale: 1.1, // Pops out to draw attention
   });
 });
-
-
-
