@@ -5,7 +5,8 @@
     right: -100%;
     width: 70%;
     height: 100vh;
-    background: black;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
     text-align: center;
     display: flex;
     flex-direction: column;
