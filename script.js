@@ -28,6 +28,12 @@ function closeMenu() {
   }, 400); // Delay to match the slide-out effect
 }
 
+document.addEventListener("DOMContentLoaded", function () {
+  const profileSection = document.getElementById("profile");
+  profileSection.style.opacity = "1";
+  profileSection.style.transform = "scale(1)";
+});
+
 const scrollToTopBtn = document.getElementById("scrollToTop");
 window.addEventListener("scroll", function () {
   // Show button when user scrolls down 100px

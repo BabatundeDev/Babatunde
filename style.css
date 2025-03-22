@@ -122,8 +122,8 @@ section {
 
 #profile {
   opacity: 0;
-    transform: scale(0.98); 
-    animation: fadeIn 0.8s ease-out 0.2s forwards;
+  transform: scale(0.98);
+  transition: opacity 0.8s ease-out 0.2s, transform 0.8s ease-out 0.2s;
   display: grid;
   justify-content: center;
   align-items: center;
