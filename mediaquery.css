@@ -13,6 +13,7 @@
     justify-content: center;
     transition: right 0.4s ease-in-out;
     margin-top: 0;
+    z-index: 100;
   }
 
   .nav-links.show {
