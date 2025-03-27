@@ -319,25 +319,19 @@ span a:hover {
   border: rgb(53, 53, 53) 0.1rem solid;
   padding: 1rem;
   border-radius: 10px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
   background: #fff;
   text-align: center;
   height: 100%;
-}
-
-.project-card:hover {
-  transform: scale(1.05);
-  transition: all 0.3s ease-in-out;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .project-card img {
   width: 100%;
   height: auto;
   display: block;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.1);
 }
 
 .project-info {
@@ -368,8 +362,7 @@ span a:hover {
 }
 
 #contact {
-  margin-top: 5rem;
-  margin-bottom: 2rem;
+  margin: 5rem 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -428,14 +421,13 @@ span a:hover {
 .contact-button {
   background-color: black;
   color: #fff;
-  padding: 12px 20px;
+  padding: 12px;
+  margin-top: 1rem;
+  width: 30%;
   border: none;
+  border-radius: 30px;
   font-size: 16px;
   font-weight: 400;
   cursor: pointer;
   transition: 0.3s;
-}
-
-.contact-button:hover {
-  background-color: #000c17;
 }
