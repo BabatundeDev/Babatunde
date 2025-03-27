@@ -338,6 +338,18 @@ span a:hover {
   padding: 20px;
 }
 
+.tech-stack {
+  font-weight: bold;
+  font-size: 16px;
+  color: #333;
+}
+
+.tech-stack span {
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding-right: 3px;
+}
+
 .project-links {
   display: flex;
   justify-content: center;
