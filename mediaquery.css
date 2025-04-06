@@ -16,6 +16,10 @@
     z-index: 100;
   }
 
+  #navbar{
+    padding: 15px 15px;
+  }
+
   .nav-links.show {
     right: 0;
   }
@@ -43,7 +47,8 @@
   }
 
   #profile {
-    margin-top: 5rem;
+    display: grid;
+    margin-top: 0;
   }
 
   #projects {
@@ -80,6 +85,21 @@
   .contact-button {
     width: 50%;
   }
+
+  .title {
+    font-size: 1.5rem;
+  }
+  .section-text-p3{
+    font-size: 1rem;
+  }
+  .section-pic-container img {
+    width: 300px;
+    margin-top: 2.5rem;
+    margin-right: 0;
+  }
+  a i {
+    font-size: 25px;
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -94,6 +114,15 @@
 
 @media screen and (max-width: 1024px) {
   #profile {
-    margin-top: 6rem;
+    display: grid;
+    margin-top: 0;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .section-pic-container img {
+    width: 300px;
+    margin-top: 2.5rem;
+    margin-right: 0;
   }
 }
+

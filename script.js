@@ -56,16 +56,36 @@ document.addEventListener("DOMContentLoaded", () => {
   const scrollRevealOptions = {
     distance: "50px",
     duration: 1200,
-    easing: "cubic-bezier(0.5, 0, 0, 1)", // Smooth & elegant
+    easing: "cubic-bezier(0.5, 0, 0, 1)", 
     opacity: 0,
-    reset: false, // Prevents repeating animations on scroll
-    viewFactor: 0.2, // Only triggers when 20% of the element is in view
+    reset: false, 
+    viewFactor: 0.2, 
   };
 
   ScrollReveal().reveal(".info", {
     ...scrollRevealOptions,
     origin: "bottom",
     delay: 300,
+  });
+
+  ScrollReveal().reveal(".hero-text", {
+    ...scrollRevealOptions,
+    origin: "bottom",
+    delay: 500,
+    afterReveal: () => {
+      // Stop the wave animation after reveal
+      document.querySelector(".emoji").style.animation = "none";
+    },
+  });
+
+  ScrollReveal().reveal(".section-pic-container", {
+    ...scrollRevealOptions,
+    origin: "bottom",
+    delay: 500,
+    afterReveal: () => {
+      // Stop the wave animation after reveal
+      document.querySelector(".emoji").style.animation = "none";
+    },
   });
 
   ScrollReveal().reveal(".about-details-container", {
