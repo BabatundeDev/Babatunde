@@ -175,25 +175,25 @@ section {
 
 @keyframes wave {
   0% {
-    transform: rotate(0deg); /* Start with no rotation */
+    transform: rotate(10deg);
   }
   25% {
-    transform: rotate(-10deg); /* Slight rotation to the left */
+    transform: rotate(-15deg); 
   }
   50% {
-    transform: rotate(10deg); /* Slight rotation to the right */
+    transform: rotate(15deg); 
   }
   75% {
-    transform: rotate(-5deg); /* Slight rotation to the left */
+    transform: rotate(-10deg); 
   }
   100% {
-    transform: rotate(0deg); /* End with no rotation */
+    transform: rotate(0deg); 
   }
 }
 
 .text .emoji {
   display: inline-block;
-  animation: wave 0.6s ease-in-out infinite; /* Faster wave animation */
+  animation: wave 0.3s ease-in-out infinite; 
 }
 
 .section-text-p3{
@@ -221,6 +221,7 @@ section {
 }
 
 .fa-brands {
+  font-size: 1.5rem;
   color: white;
 }
 
