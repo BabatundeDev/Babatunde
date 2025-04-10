@@ -19,7 +19,7 @@ body {
   background-color: #000;
   color: #fff;
   border: none;
-  padding: 5px 13px;
+  padding: 6px 13px;
   border-radius: 50%;
   cursor: pointer;
   font-size: 20px;
@@ -54,6 +54,7 @@ body {
 
 .logo {
   font-size: 1.8rem;
+  font-weight: 700;
 }
 
 .nav-links {
@@ -203,14 +204,14 @@ section {
   line-height: 1.2;
 }
 
-.title span{
-  color: lightblue;
-}
-
 .title {
   font-size: 3rem;
   line-height: 1.3;
   font-weight: 700;
+}
+
+.title span{
+  color: lightblue;
 }
 
 .social-container {
@@ -478,6 +479,7 @@ span a:hover {
 }
 
 footer{
+  margin: 0;
   background-color: #111827;
   color: white;
 }
@@ -485,13 +487,14 @@ footer{
 .footer-container{
   display: flex;
   justify-content: space-between;
-  padding-top: 2.5rem;
+  padding-top: 2rem;
   padding-bottom: 2.5rem;
 }
 
 .footer-bar{
+  margin: 0;
+  padding-bottom: 5px;
   font-size: 0.9rem;
   color: white;
   text-align: center;
-  padding-bottom: 5px;
 }

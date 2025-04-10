@@ -116,11 +116,4 @@ document.addEventListener("DOMContentLoaded", () => {
     delay: 500,
     rotate: { x: 10, y: 0, z: 0 }, // Subtle rotation for a stylish touch
   });
-
-  ScrollReveal().reveal(".cta-button", {
-    ...scrollRevealOptions,
-    origin: "bottom",
-    delay: 600,
-    scale: 1.1, // Pops out to draw attention
-  });
 });
