@@ -24,4 +24,4 @@ This is my personal portfolio website, built using HTML, CSS, Bootstrap, and Jav
 3. **Projects:** Showcases my best work with images and descriptions.
 4. **Contact Form:** Allows visitors to reach out easily.
 
-🚀 **Live Demo:** [https://tunde914.github.io/Babatunde/](https://tunde914.github.io/Babatunde/)
+🚀 **Live Demo:** https://github.com/BabatundeDev/Babatunde
