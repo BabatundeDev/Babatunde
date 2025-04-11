@@ -1,4 +1,4 @@
-@media screen and (max-width: 768px) {
+@media (max-width: 600px) {
   .nav-links {
     position: fixed;
     top: 0;
@@ -93,36 +93,30 @@
     font-size: 1rem;
   }
   .section-pic-container img {
-    width: 250px;
-    margin-top: 1rem;
+    width: 350px;
     margin-right: 0;
   }
   a i {
     font-size: 25px;
   }
+  .resume {
+    padding: 10px 18px;
+    font-size: 0.9rem;
+  }
 }
 
-@media screen and (max-width: 1200px) {
-  #desktop-nav {
-    display: none;
-  }
-
+@media (max-width: 1200px) {
   .container {
     display: grid;
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media (max-width: 1024px) {
   #profile {
     display: grid;
     margin-top: 0;
     margin-left: 1rem;
     margin-right: 1rem;
-  }
-  .section-pic-container img {
-    width: 250px;
-    margin-top: 1rem;
-    margin-right: 0;
   }
 }
 
