@@ -16,7 +16,6 @@ body {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  left: auto;
   background-color: #000;
   color: #fff;
   border: none;
@@ -56,6 +55,7 @@ body {
 .logo {
   font-size: 1.8rem;
   font-weight: 700;
+  cursor: default;
 }
 
 .nav-links {
@@ -332,11 +332,14 @@ span a:hover {
 .details-container {
   padding: 1.5rem;
   flex: 1;
-  background: white;
   border-radius: 2rem;
   border: rgb(53, 53, 53) 2px solid;
-  border-color: rgb(163, 163, 163);
   text-align: center;
+}
+
+.details-container:hover {
+  background-color: whitesmoke;
+  color: rgb(53, 53, 53);
 }
 
 .card {
@@ -345,8 +348,8 @@ span a:hover {
 }
 
 .card:hover {
-  transform: scale(1.05);
-  transition: all 0.3s ease-in-out;
+  background: whitesmoke;
+  color: rgb(53, 53, 53);
 }
 
 #projects {
@@ -372,6 +375,11 @@ span a:hover {
   background: #fff;
   text-align: center;
   height: 100%;
+}
+
+.project-card:hover {
+  background: whitesmoke;
+  color: rgb(53, 53, 53);
 }
 
 .project-card img {

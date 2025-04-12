@@ -54,7 +54,7 @@ scrollToTopBtn.addEventListener("click", function () {
 
 document.addEventListener("DOMContentLoaded", () => {
   const scrollRevealOptions = {
-    distance: "50px",
+    distance: "30px",
     duration: 1200,
     easing: "cubic-bezier(0.5, 0, 0, 1)", 
     opacity: 0,
