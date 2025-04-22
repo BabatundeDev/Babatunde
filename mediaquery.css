@@ -90,6 +90,8 @@
     font-size: 1.5rem;
   }
   .section-text-p3{
+    display: flex;
+    flex-wrap: wrap;
     font-size: 1rem;
   }
   .section-pic-container img {

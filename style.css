@@ -43,7 +43,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 35px;
+  padding: 15px 40px;
   width: 100%;
   background: transparent;
   color: white;
@@ -196,6 +196,8 @@ section {
 }
 
 .section-text-p3{
+  display: flex;
+  flex-wrap: wrap;
   font-size: 1.5rem;
   color: #90a4ae;
   margin-top: 20px;
