@@ -448,6 +448,7 @@ span a:hover {
 }
 
 .contact-title {
+  color: #000;
   font-size: 2rem;
   font-weight: 600;
   margin-bottom: 10px;
@@ -493,7 +494,7 @@ span a:hover {
 }
 
 .contact-button {
-  background-color: #111827;
+  background-color: #000;
   color: #fff;
   padding: 12px;
   margin-top: 1rem;
@@ -508,7 +509,7 @@ span a:hover {
 
 footer{
   margin: 0;
-  background-color: #111827;
+  background-color: #000;
   color: white;
 }
 
