@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio: Babatunde Ishau</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="assets/icons/favicon_io/site.webmanifest">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaquery.css" />
+</head>
+<body>
+  <div class="background">
+    <header>
+      <nav id="navbar">
+        <div class="logo">Babatunde Ishau</div>
+        <ul class="nav-links">
+          <li><a href="#about" onclick="closeMenu()">About</a></li>
+          <li><a href="#experience" onclick="closeMenu()">Skills</a></li>
+          <li><a href="#projects" onclick="closeMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+        </ul>
+        <div class="hamburger" onclick="toggleMenu()">
+          <i class="fas fa-bars"></i>
+        </div>
+      </nav>
+    </header>
+
+    <section id="profile">
+      <div class="section-text">
+        <p class="text">Hey, there <span class="emoji">👋🏽</span></p>
+        <div class="hero-text">
+          <h1 class="title">
+            I'm <span>Babatunde Ishau</span> <br />
+            a Frontend Developer</h1>
+          <p class="section-text-p3">
+            Focused on building clean, responsive, and intuitive web
+            applications that deliver exceptional user experiences.
+          </p>
+          <a href="assets/link/Babatunde_Ishau.pdf" download class="resume">Download Resume</a>
+          <div class="social-container">
+            <a href="https://github.com/BabatundeDev" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://x.com/BabatundeIshau" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://linkedin.com/in/babatunde-ishau-95ab94359" target="_blank"><i
+                class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="section-pic-container">
+        <img src="assets/images/pic-removebg-preview.png" alt="Tunde profile image" mb="0" />
+      </div>
+    </section>
+  </div>
+
+  <section id="about">
+    <h1 class="about-title fs-1 text-black pt-3">About Me</h1>
+    <div class="container">
+      <ul class="info">
+        <li>
+          <span class="first-block">Full Name:</span><span class="second-block">Babatunde Ishau</span>
+        </li>
+        <li>
+          <span class="first-block">Phone:</span><span class="second-block"><a
+              href="tel:+2348077780144">+2348077780144</a></span>
+        </li>
+        <li>
+          <span class="first-block">Email:</span><span class="second-block"><a class="text-break"
+              href="mailto:ishaubabatunde49@gmail.com">ishaubabatunde49@gmail.com</a></span>
+        </li>
+        <li>
+          <span class="first-block">Website:</span><span class="second-block"><a class="text-break"
+              href="https://babatunde-portfolio.vercel.app/">babatunde-portfolio</a></span>
+        </li>
+      </ul>
+
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img src="assets/icons/experience.png" alt="experience" loading="lazy" width="30" />
+            <h3>Experience</h3>
+            <p>
+              1+ year <br />
+              Frontend Development
+            </p>
+          </div>
+          <div class="details-container">
+            <img src="assets/icons/education.png" alt="education" loading="lazy" width="30" />
+            <h3>Education</h3>
+            <p>Diploma in Responsive Web Development</p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p>
+            I'm a Frontend Web Developer and Digital Creative passionate about building user-friendly, responsive, and conversion-focused web experiences. Currently based in Lagos, Nigeria, I combine clean code with modern design to help companies, businesses and startups establish a professional online presence. I’m driven by clean design, seamless functionality, and continuous learning. Let’s connect and bring something amazing to life! My work blends clean design, seamless functionality, and modern standards — always aiming to deliver value, accessibility, and scalability across devices.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <h1 class="experience-title fs-1 text-black pt-3">My Skills And Expertise</h1>
+    <div class="container py-5">
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="card text-center p-3">
+            <i class="fab fa-html5 fa-3x text-danger"></i>
+            <h3 class="mt-3">HTML</h3>
+            <p class="card-text">
+              Crafting well-structured and semantic HTML for clean,
+              accessible, and scalable layouts.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card text-center p-3">
+            <i class="fab fa-css3-alt fa-3x text-primary"></i>
+            <h3 class="mt-3">CSS</h3>
+            <p class="card-text">
+              Designing visually stunning and responsive layouts using modern
+              CSS methodologies.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card text-center p-3">
+            <i class="fab fa-bootstrap fa-3x" style="color: #7952b3"></i>
+            <h3 class="mt-3">Bootstrap</h3>
+            <p class="card-text">
+              Leveraging Bootstrap to build fast, responsive, and mobile-first
+              web designs effortlessly.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card text-center p-3" style="align-items: center;">
+            <img src="assets/icons/tailwindcss-icon-svgrepo-com.svg" alt="" width="55">
+            <h3 class="mt-3">TailwindCSS</h3>
+            <p class="card-text">
+              Leveraging TailwindCSS to build fast, responsive, and mobile-first web designs effortlessly.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card text-center p-3">
+            <i class="fab fa-js-square fa-3x text-warning"></i>
+            <h3 class="mt-3">JavaScript</h3>
+            <p class="card-text">
+              Bringing websites to life with dynamic interactions and
+              optimized JavaScript logic.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card text-center p-3">
+            <i class="fab fa-react fa-3x text-info"></i>
+            <h3 class="mt-3">React</h3>
+            <p class="card-text">
+              Building scalable, high-performance UI components with React
+              while mastering state management.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card text-center p-3">
+            <i class="fas fa-mobile-alt fa-3x text-success"></i>
+            <h3 class="mt-3">Responsive Design</h3>
+            <p class="card-text">
+              Creating fluid and user-friendly designs that adapt seamlessly
+              to any device.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card text-center p-3">
+            <i class="fab fa-git-alt fa-3x text-danger"></i>
+            <h3 class="mt-3">Git</h3>
+            <p class="card-text">
+              Mastering version control with Git to streamline code management
+              and team collaboration.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card text-center p-3">
+            <i class="fab fa-github fa-3x text-dark"></i>
+            <h3 class="mt-3">GitHub</h3>
+            <p class="card-text">
+              Utilizing GitHub for seamless collaboration, version control,
+              and professional project showcasing.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card text-center p-3">
+            <i class="fas fa-tachometer-alt fa-3x text-info"></i>
+            <h3 class="mt-3">Web Performance</h3>
+            <p class="card-text">
+              Optimizing websites for fast loading speeds and SEO best practices.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card text-center p-3">
+            <i class="fas fa-fire fa-3x text-warning"></i>
+            <h3 class="mt-3">Firebase</h3>
+            <p class="card-text">
+              Implementing Firebase for real-time data, user authentication, and backend services in web apps.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card text-center p-3">
+            <i class="fas fa-plug fa-3x text-secondary"></i>
+            <h3 class="mt-3">APIs</h3>
+            <p class="card-text">
+              Integrating RESTful and third-party APIs to fetch dynamic data and enhance web functionality.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="projects-heading">
+      <h1 class="fs-1 text-black pt-3">My Projects</h1>
+    </div>
+
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-lg-6">
+          <div class="project-card">
+            <img src="assets/images/project1.png" alt="Project 1" loading="lazy" class="img-fluid" />
+            <div class="project-info">
+              <h3>Flickster</h3>
+              <p>
+                A dynamic and responsive movie discovery web app built using
+                the TMDB (The Movie Database) API. Users can explore trending
+                and popular movies, search by title, filter by genre, and view
+                detailed movie information including ratings, release dates,
+                and overviews. The project features a clean Netflix-style
+                layout with a responsive slider for popular movies and a
+                light/dark mode toggle for a personalized user experience.
+              </p>
+              <p class="tech-stack">
+                <span>Tech Stack:</span> HTML | CSS | BOOTSTRAP | REACT |
+                JAVASCRIPT
+              </p>
+              <div class="project-links">
+                <a href="https://flickster.vercel.app/" target="_blank">View projects</a>
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="project-card">
+            <img src="assets/images/project2.png" alt="Project 2" loading="lazy" class="img-fluid" />
+            <div class="project-info">
+              <h3>TundeBeatz</h3>
+              <p>
+                A sleek and interactive music player web app built with React, JavaScript, and CSS. It features a
+                circular rotating album cover, real-time progress tracking, and smooth audio controls. Users can play,
+                pause, seek, and navigate through a curated playlist of royalty-free tracks. The UI includes a modern
+                search bar, responsive design, volume control, and visual indicators for active tracks. Styled with
+                glowing effects and smooth gradients, the player delivers a premium user experience across devices.
+              </p>
+              <p class="tech-stack">
+                <span>Tech Stack:</span> REACT | JavaScript | HTML | CSS
+              </p>
+              <div class="project-links">
+                <a href="https://music-player-tundebeatz.vercel.app/" target="_blank">View projects</a>
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="project-card">
+            <img src="assets/images/project3.png" alt="Project 3" loading="lazy" class="img-fluid" />
+            <div class="project-info">
+              <h3>Ministore</h3>
+              <p>
+                Ministore is a clean and modern e-commerce website built to
+                showcase a minimalist yet professional online shopping
+                experience. The project features a fully responsive layout,
+                intuitive navigation, and visually appealing product displays
+                designed to attract and retain users.
+              </p>
+              <p class="tech-stack">
+                <span>Tech Stack:</span> HTML | CSS | BOOTSTRAP | REACT |
+                JAVASCRIPT
+              </p>
+              <div class="project-links">
+                <a href="https://tundemart-ministore.vercel.app/" target="_blank">View projects</a>
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="project-card">
+            <img src="assets/images/project4.png" alt="Project 4" loading="lazy" class="img-fluid" />
+            <div class="project-info">
+              <h3>Abiconnect</h3>
+              <p>
+                Abiconnect is a professional digital marketing website that
+                offers innovative solutions to help businesses grow online. It
+                features a sleek design, user-friendly navigation, and
+                strategic marketing tools to boost brand visibility and
+                engagement.
+              </p>
+              <p class="tech-stack">
+                <span>Tech Stack:</span> HTML | CSS | BOOTSTRAP | REACT |
+                JAVASCRIPT
+              </p>
+              <div class="project-links">
+                <a href="https://abiconnect.vercel.app/" target="_blank">View projects</a>
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="project-card">
+            <img src="assets/images/project5.png" alt="Project 5" loading="lazy" class="img-fluid" />
+            <div class="project-info">
+              <h3>Skywings</h3>
+              <p>
+                SkyWings is a sleek and responsive airline booking and travel
+                website that provides users with a smooth and intuitive
+                interface for exploring destinations, booking flights, and
+                accessing travel-related services. Designed with a modern
+                aesthetic, the website focuses on delivering a user-friendly
+                experience while maintaining a professional and trustworthy
+                look.
+              </p>
+              <p class="tech-stack">
+                <span>Tech Stack:</span> HTML | CSS | BOOTSTRAP | REACT |
+                JAVASCRIPT
+              </p>
+              <div class="project-links">
+                <a href="https://skywings-gamma.vercel.app/" target="_blank">View projects</a>
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="project-card">
+            <img src="assets/images/project6.png" alt="Project 6" loading="lazy" class="img-fluid" />
+            <div class="project-info">
+              <h3>Desire Homes and Apartment</h3>
+              <p>
+                Desire Home & Apartments is a beautifully crafted real estate
+                landing page designed to showcase luxurious apartments and
+                modern living spaces. The website emphasizes a clean, elegant
+                design paired with a smooth user experience, making it easy
+                for visitors to explore properties and connect with real
+                estate services.
+              </p>
+              <p class="tech-stack">
+                <span>Tech Stack:</span> HTML | CSS | BOOTSTRAP | REACT |
+                JAVASCRIPT
+              </p>
+              <div class="project-links">
+                <a href="https://desirehomesandapts.vercel.app/" target="_blank">View projects</a>
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="project-card">
+            <img src="assets/images/project7.png" alt="Project 7" loading="lazy" class="img-fluid" />
+            <div class="project-info">
+              <h3>Dental Care</h3>
+              <p>
+                Dental Care is a clean and modern website designed for a
+                dental clinic or healthcare provider. The site focuses on
+                building trust with visitors through a professional layout,
+                clear service presentation, and intuitive navigation. Its
+                design reflects care, cleanliness, and confidence—qualities
+                essential in the healthcare industry.
+              </p>
+              <p class="tech-stack">
+                <span>Tech Stack:</span> HTML | CSS | BOOTSTRAP | REACT |
+                JAVASCRIPT
+              </p>
+              <div class="project-links">
+                <a href="https://dental-care-three-brown.vercel.app/" target="_blank">View projects</a>
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="project-card">
+            <img src="assets/images/project8.png" alt="Project 8" loading="lazy" class="img-fluid" />
+            <div class="project-info">
+              <h3>Voice Recorder Web App</h3>
+              <p>
+                A modern voice recording web app that lets users record, play,
+                and manage audio notes. It features real-time waveform
+                visualization, simple controls, and Local Storage for
+                persistent recordings.
+              </p>
+              <p class="tech-stack">
+                <span>Tech Stack:</span> HTML | CSS | BOOTSTRAP | REACT |
+                JAVASCRIPT
+              </p>
+              <div class="project-links">
+                <a href="https://voice-recorder-chi.vercel.app/" target="_blank">View projects</a>
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="contact-container">
+      <h1 class="contact-title">Contact</h1>
+      <form class="contact-form" action="https://formsubmit.co/ishaubabatunde49@gmail.com" method="POST">
+        <div class="form-row">
+          <input name="fname" id="fname" type="text" class="contact-input" placeholder="Your firstname" required />
+          <input name="lname" id="lname" type="text" class="contact-input" placeholder="Your lastname" required />
+        </div>
+        <div class="form-row">
+          <input name="phone" id="phone" type="text" class="contact-input" placeholder="Your phone number" required />
+          <input name="email" id="email" type="email" class="contact-input" placeholder="Your email address" required />
+        </div>
+        <input name="subject" id="subject" type="text" class="contact-input contact-subject"
+          placeholder="Your subject of this message" required />
+        <textarea class="contact-textarea" placeholder="Your message" required></textarea>
+        <button type="submit" class="contact-button">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer-container">
+      <div>
+        <h2>Babatunde Ishau</h2>
+        <p>Frontend Developer | React Developer | JavaScript
+          Developer</p>
+      </div>
+
+      <div class="social-container">
+        <a href="https://github.com/BabatundeDev" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="https://x.com/BabatundeIshau" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="https://www.linkedin.com/in/ishau-babatunde-95ab94359" target="_blank"><i
+            class="fa-brands fa-linkedin-in"></i></a>
+      </div>
+    </div>
+
+    <p class="footer-bar">&copy; 2025 Babatunde Ishau. All rights reserved.</p>
+  </footer>
+
+  <button id="scrollToTop"><i class="fa-solid fa-arrow-up"></i></button>
+
+  <div id="preloader">
+    <div class="loader-content">
+      <img src="assets/icons/TundeCodz logo.png" alt="" loading="eager" width="120px" height="110px" class="logo-2">
+      <div class="loading-text">Loading...</div>
+    </div>
+  </div>
+  <div class="spinner"></div>
+
+</div>
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+</html>
