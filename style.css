@@ -58,7 +58,8 @@ body {
   cursor: default;
   color: #fff;
   animation: pulse 1.8s ease-in-out infinite;
-  text-shadow: 0 0 10px #00bfff, 0 0 30px #add8e6;    
+  text-shadow: 0 0 10px #00bfff, 0 0 30px #add8e6;
+  text-decoration: none;    
 }
 
 .nav-links {
@@ -261,16 +262,6 @@ section {
   margin-bottom: 1rem;
 }
 
-.experience-title {
-  color: black;
-  text-align: center;
-}
-
-#experience {
-  justify-content: center;
-  color: black;
-}
-
 .info {
   margin-top: 3.5rem;
   margin-right: 2rem;
@@ -343,18 +334,156 @@ span a:hover {
 }
 
 .details-container:hover {
-  background-color: whitesmoke;
+  background-color: #f9f9f9;
   color: rgb(53, 53, 53);
 }
 
-.card {
-  border: rgb(53, 53, 53) 2px solid;
-  height: 100%;
+.about-thumb {
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
-.card:hover {
-  background: whitesmoke;
-  color: rgb(53, 53, 53);
+.about-thumb h3{
+  font-size: 36px;
+}
+
+.about-thumb p{
+  font-size: 18px;
+  color: #717275;
+}
+
+.skills-list {
+  padding: 2rem;
+  background: #f9f9f9;
+  border: 1px solid #e9eaeb;
+  border-radius: 1rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+.skills-list ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skills-list li {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: #ffffff;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.skills-list li:hover {
+  transform: scale(1.15);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+.services,
+.featured {
+  background: #f9f9f9;
+  border-top: 1px solid #e9eaeb;
+  border-bottom: 1px solid #e9eaeb;
+}
+
+.services-thumb {
+  background: #fff;
+  border: 2px solid transparent;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 24px;
+  padding: 40px 40px 240px 40px;
+  transition: all 0.5s;
+}
+
+.services-thumb-up {
+  position: relative;
+  bottom: 50px;
+  margin-bottom: -50px;
+}
+
+.services-thumb:hover {
+  border:  2px solid black;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
+}
+
+.services-thumb:hover .services-icon-wrap {
+  background: lightblue;
+  border-color: lightblue;
+  color: #fff;
+}
+
+.services-icon-wrap {
+  border: 1px solid #e9eaeb;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+  height: 55%;
+  transform: rotate(-35deg) translateY(55px);
+  transition: all ease 0.5s;
+}
+
+.services-icon {
+  font-size: 90px;
+  position: relative;
+  bottom: 15px;
+}
+
+.services-thumb:hover .services-price-wrap {
+  background: lightblue;
+}
+
+.services-thumb:hover .services-price-overlay {
+  background: #535da1;
+}
+
+.services-price-wrap {
+  background: #535da1;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  padding: 6px 20px 6px 15px;
+  transition: all ease 0.5s;
+}
+
+.services-price-text {
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.services-price-overlay {
+  background: lightblue;
+  border-bottom-left-radius: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  pointer-events: none;
+}
+
+.custom-btn {
+  background: lightblue;
+  border-radius: 100px;
+  color: white;
+  font-weight: 700;
+  padding: 12px 24px;
+}
+
+.custom-btn:hover {
+  background: lightblue;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
+  color: white;
 }
 
 #projects {
@@ -383,7 +512,7 @@ span a:hover {
 }
 
 .project-card:hover {
-  background: whitesmoke;
+  background: #f9f9f9;
   color: rgb(53, 53, 53);
 }
 
@@ -398,18 +527,6 @@ span a:hover {
 
 .project-info {
   padding: 20px;
-}
-
-.tech-stack {
-  font-weight: bold;
-  font-size: 16px;
-  color: #333;
-}
-
-.tech-stack span {
-  font-size: 1.2rem;
-  font-weight: 600;
-  padding-right: 3px;
 }
 
 .project-links {
@@ -494,7 +611,7 @@ span a:hover {
 }
 
 .contact-button {
-  background-color: #000;
+  background-color: black;
   color: #fff;
   padding: 12px;
   margin-top: 1rem;

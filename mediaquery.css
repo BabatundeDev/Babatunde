@@ -125,3 +125,25 @@
   }
 }
 
+@media screen and (min-width: 1600px) {
+  .services-thumb-up {
+    bottom: 0;
+    margin-bottom: 32px;
+  }
+
+  .services-thumb {
+    margin-bottom: 32px;
+    padding-bottom: 270px;
+  }
+
+  .services-icon-wrap {
+    width: 45%;
+    height: 60%;
+  }
+
+  .services .col-lg-10 .row .col-lg-6:last-child,
+  .projects .col-lg-4:last-child {
+    margin-bottom: 0;
+  }
+}
+
