@@ -64,7 +64,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
   ScrollReveal().reveal(".info", {
     ...scrollRevealOptions,
-    origin: "bottom",
+    origin: "left",
+    delay: 300,
+  });
+
+  ScrollReveal().reveal(".info-2", {
+    ...scrollRevealOptions,
+    origin: "right",
     delay: 300,
   });
 
@@ -88,18 +94,11 @@ document.addEventListener("DOMContentLoaded", () => {
     },
   });
 
-  ScrollReveal().reveal(".about-details-container", {
+  ScrollReveal().reveal(".service-card", {
     ...scrollRevealOptions,
-    origin: "left",
-    delay: 400,
-    interval: 200,
-  });
-
-  ScrollReveal().reveal(".card", {
-    ...scrollRevealOptions,
-    origin: "top",
+    origin: "bottom",
     delay: 300,
-    scale: 0.95, // Slight zoom-in effect for a modern touch
+    interval: 200,
   });
 
   ScrollReveal().reveal(".project-card", {

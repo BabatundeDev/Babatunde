@@ -55,11 +55,15 @@ body {
 .logo {
   font-size: 2rem;
   font-weight: 700;
-  cursor: default;
+  cursor: pointer;
   color: #fff;
   animation: pulse 1.8s ease-in-out infinite;
   text-shadow: 0 0 10px #00bfff, 0 0 30px #add8e6;
   text-decoration: none;    
+}
+
+.logo:hover{
+  color: lightblue;
 }
 
 .nav-links {
@@ -257,41 +261,8 @@ section {
 }
 
 .about-title {
-  
   text-align: center;
   margin-bottom: 1rem;
-}
-
-.info {
-  margin-top: 3.5rem;
-  margin-right: 2rem;
-  padding: 0;
-  width: 90%;
-  float: left;
-}
-
-.info li:first-child {
-  padding-top: 0;
-}
-
-.info li {
-  width: 100%;
-  float: left;
-  list-style: none;
-  padding: 10px 0;
-}
-
-.info li .first-block {
-  width: 40%;
-  display: inline-block;
-  color: #000;
-  font-weight: bold;
-}
-
-.info li .second-block {
-  width: 60%;
-  display: inline-block;
-  color: black;
 }
 
 span a {
@@ -313,16 +284,6 @@ span a:hover {
   gap: 2rem;
   margin-bottom: 2rem;
   margin-top: 2rem;
-}
-
-.about-details-container {
-  justify-content: center;
-  flex-direction: column;
-}
-
-.about-containers,
-.about-details-container {
-  display: flex;
 }
 
 .details-container {

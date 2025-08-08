@@ -38,14 +38,6 @@
     z-index: 1100;
   }
 
-  .info {
-    margin-bottom: 2em;
-  }
-
-  .card {
-    padding: 10px;
-  }
-
   #profile {
     display: grid;
     margin-top: 0;
