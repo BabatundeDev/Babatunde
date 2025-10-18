@@ -116,7 +116,3 @@ document.addEventListener("DOMContentLoaded", () => {
     rotate: { x: 10, y: 0, z: 0 }, // Subtle rotation for a stylish touch
   });
 });
-
-window.addEventListener("load", () => {
-  document.getElementById("preloader").style.display = "none";
-});
